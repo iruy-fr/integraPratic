@@ -1,3 +1,4 @@
+import logging
 import postos
 import supermercados
 import farmacia
@@ -6,68 +7,73 @@ from fazconsulta import caminho_arquivo
 
 
 def guardapostos():
+    logging.basicConfig(filename='consulta.log', filemode='w', level=logging.DEBUG, )
     try:
-        via_db().cursor().execute(postos.query)
-        resultados = via_db().cursor().fetchall()
-
-
+        execute = via_db().cursor().execute(postos.query)
+        print(execute)
+        resultados = execute.fetchall()
         if resultados:
-            with open(caminho_arquivo(),'w', encoding='utf-8') as arquivo:
-                documento = [desc[0] for desc in via_db().description]
-                arquivo.write('\t'.join(documento)+'\n')
+            with open(caminho_arquivo(), 'w', encoding='utf-8') as arquivo:
+                cabecalho = ['LINHA']
+                arquivo.write('\t'.join(cabecalho) + '\n')
 
                 for row in resultados:
-                    arquivo.write('\t'.join(map(str,row))+'\n')
+                    linha_formatada = '\t'.join(map(str, row)) + '\n'
+                    arquivo.write(linha_formatada)
+
             print(f"Salvos em:{caminho_arquivo()}")
-        else:
-            print((f"Não foi salvo nenhum arquivo"))
 
     except Exception as e:
-        print(f"Erro {e}")
+        logging.error(f"Erro ao executar a consulta: {postos.query}", exc_info=True)
+        print(f"Ocorreu um erro inesperado: {str(e)}")
 
     finally:
         via_db().cursor().close()
 
 def guardasupermercados():
+    logging.basicConfig(filename='consulta.log', filemode='w', level=logging.DEBUG)
     try:
-        via_db().cursor().execute(supermercados.query)
-        resultados = via_db().cursor().fetchall()
-
+        execute = via_db().cursor().execute(supermercados.query)
+        print(execute)
+        resultados = execute.fetchall()
         if resultados:
-            with open(caminho_arquivo(), 'w', encoding='utf-8') as arquivo:
-                documento = [desc[0] for desc in via_db().description]
-                arquivo.write('\t'.join(documento) + '\n')
+            with open(caminho_arquivo(),'w', encoding='utf-8') as arquivo:
+               cabecalho = ['LINHA']
+               arquivo.write('\t'.join(cabecalho)+'\n')
 
-                for row in resultados:
-                    arquivo.write('\t'.join(map(str, row)) + '\n')
+               for row in resultados:
+                   linha_formatada = '\t'.join(map(str, row))+'\n'
+                   arquivo.write(linha_formatada)
+
             print(f"Salvos em:{caminho_arquivo()}")
-        else:
-            print((f"Não foi salvo nenhum arquivo"))
 
     except Exception as e:
-        print(f"Erro {e}")
+        logging.error(f"Erro ao executar a consulta: {supermercados.query}", exc_info=True)
+        print(f"Ocorreu um erro inesperado: {str(e)}")
 
     finally:
         via_db().cursor().close()
 
 def guardafarmacia():
+    logging.basicConfig(filename='consulta.log', filemode='w', level=logging.DEBUG, )
     try:
-        via_db().cursor().execute(farmacia.query)
-        resultados = via_db().cursor().fetchall()
-
+        execute = via_db().cursor().execute(farmacia.query)
+        print(execute)
+        resultados = execute.fetchall()
         if resultados:
             with open(caminho_arquivo(), 'w', encoding='utf-8') as arquivo:
-                documento = [desc[0] for desc in via_db().description]
-                arquivo.write('\t'.join(documento) + '\n')
+                cabecalho = ['LINHA']
+                arquivo.write('\t'.join(cabecalho) + '\n')
 
                 for row in resultados:
-                    arquivo.write('\t'.join(map(str, row)) + '\n')
+                    linha_formatada = '\t'.join(map(str, row)) + '\n'
+                    arquivo.write(linha_formatada)
+
             print(f"Salvos em:{caminho_arquivo()}")
-        else:
-            print((f"Não foi salvo nenhum arquivo"))
 
     except Exception as e:
-        print(f"Erro {e}")
+        logging.error(f"Erro ao executar a consulta: {farmacia.query}", exc_info=True)
+        print(f"Ocorreu um erro inesperado: {str(e)}")
 
     finally:
         via_db().cursor().close()

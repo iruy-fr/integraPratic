@@ -315,5 +315,5 @@ SELECT DISTINCT
 FROM
          u_depara_cidade depara
     JOIN cidade ON ( cidade.ibge = coalesce(depara.ibge, '10009') )
-                   AND ( cidade.uf = coalesce(depara.dsuf, 'RS') );
-"""
+                   AND ( cidade.uf = coalesce(depara.dsuf, 'RS') )
+                   """

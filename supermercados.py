@@ -1,5 +1,6 @@
 from fazconsulta import consulta_sexta
 
+
 query = f"""
 SELECT DISTINCT
     lpad('01', 2)
@@ -315,5 +316,5 @@ SELECT DISTINCT
 FROM
          u_depara_cidade depara
     JOIN cidade ON ( cidade.ibge = coalesce(depara.ibge, '10009') )
-                   AND ( cidade.uf = coalesce(depara.dsuf, 'RS') );
+                   AND ( cidade.uf = coalesce(depara.dsuf, 'RS') )
 """
