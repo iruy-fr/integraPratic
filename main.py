@@ -1,0 +1,3 @@
+from guardaconsulta import guardapostos,guardasupermercados,guardafarmacia
+
+guardapostos()

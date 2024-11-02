@@ -1,5 +1,4 @@
 import datetime
-import pathlib
 from dateutil.relativedelta import relativedelta, FR
 
 def caminho_arquivo():
@@ -8,4 +7,5 @@ def caminho_arquivo():
 def consulta_sexta():
     getfriday = datetime.date.today() + relativedelta(weekday=FR(-1))
     formated_date = getfriday.strftime('%d/%m/%Y')
-    return formated_date
+    print(formated_date)
+    return formated_date.encode('windows-1252')

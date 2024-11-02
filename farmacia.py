@@ -1,7 +1,7 @@
 from fazconsulta import consulta_sexta
 
 
-consulta = f"""
+query = f"""
 SELECT DISTINCT
     lpad('01', 2)
     || lpad('008', 3)
