@@ -1,6 +1,4 @@
 from fazconsulta import consulta_sexta
-from dbconnection import via_db
-
 
 
 query = f"""
