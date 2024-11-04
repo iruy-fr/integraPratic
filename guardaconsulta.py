@@ -1,9 +1,9 @@
 import logging
 import re
 import clientes,postos,supermercados,farmacia
+import fazconsulta
 from dbconnection import via_db
-from fazconsulta import caminho_arquivo,caminho_clientes
-
+from fazconsulta import caminho_arquivo,caminho_clientes, cabecalho_cad
 
 def guardapostos():
     logging.basicConfig(filename='consulta.log', filemode='w', level=logging.DEBUG, )
@@ -12,7 +12,7 @@ def guardapostos():
         resultados = execute.fetchall()
         if resultados:
             with open(caminho_arquivo(), 'w', encoding='utf-8') as arquivo:
-                cabecalho = ['LINHA']
+                cabecalho = [f'{fazconsulta.cabecalho_cad()}']
                 arquivo.write('\t'.join(cabecalho) + '\n')
 
                 for row in resultados:
@@ -33,7 +33,7 @@ def guardasupermercados():
         resultados = execute.fetchall()
         if resultados:
             with open(caminho_arquivo(),'w', encoding='utf-8') as arquivo:
-               cabecalho = ['LINHA']
+               cabecalho = [f'{fazconsulta.cabecalho_cad()}']
                arquivo.write('\t'.join(cabecalho)+'\n')
 
                for row in resultados:
@@ -54,7 +54,7 @@ def guardafarmacia():
         resultados = execute.fetchall()
         if resultados:
             with open(caminho_arquivo(), 'w', encoding='utf-8') as arquivo:
-                cabecalho = ['LINHA']
+                cabecalho = [f'{fazconsulta.cabecalho_cad()}']
                 arquivo.write('\t'.join(cabecalho) + '\n')
 
                 for row in resultados:

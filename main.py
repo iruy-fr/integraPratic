@@ -1,5 +1,5 @@
 from guardaconsulta import guardapostos,guardasupermercados,guardafarmacia,guardaclientes
-from formato_cad import formatador_cad
+from fazconsulta import formatador_cad
 
 
 guardasupermercados()
