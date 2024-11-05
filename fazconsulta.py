@@ -1,8 +1,10 @@
 import datetime
 import os
-from unittest import case
 from dateutil.relativedelta import relativedelta, FR
 
+
+def get_pasta():
+    return os.path.basename(r"C:\consultatesteintegraPratic/35")
 
 def caminho_clientes():
     arquivo_local = rf"C:\consultatesteintegraPratic/consultaclientesteste{caminho_data()}.txt"
@@ -15,7 +17,7 @@ def caminho_arquivo():
 
 
 def caminho_cad():
-    pratic_cad = os.path.basename(r"C:\consultatesteintegraPratic/41")
+    pratic_cad = os.path.basename(rf"{get_pasta()}")
     match pratic_cad:
         case '35':
             arquivo_local = rf"C:\consultatesteintegraPratic/{pratic_cad}/cad_35.txt"
@@ -44,7 +46,7 @@ def caminho_cad():
 
 
 def cabecalho_cad():
-    pratic_cad = os.path.basename(r"C:\consultatesteintegraPratic/41")
+    pratic_cad = os.path.basename(rf"{get_pasta()}")
     match pratic_cad:
         case '35':
             cabecalho = '00035'
@@ -82,10 +84,3 @@ def caminho_data():
     getfriday = datetime.date.today() + relativedelta(weekday=FR(-1))
     formated_date = getfriday.strftime('%d-%m-%Y')
     return formated_date
-
-
-def formatador_cad():
-    with open(caminho_cad(),'w', encoding='utf-8') as arquivo:
-        for resultado in [f'{caminho_arquivo()}',f'{caminho_clientes()}']:
-            with open(resultado, 'r', encoding='utf-8') as r:
-                arquivo.writelines(r)
