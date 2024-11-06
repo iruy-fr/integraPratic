@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="667f5249-c10d-40d5-b13f-f34c2ec310c6" name="Changes" comment="Gera e concatena arquivos">
+    <list default="true" id="667f5249-c10d-40d5-b13f-f34c2ec310c6" name="Changes" comment="Correção de codificação de arquivo Windows-1252">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fazconsulta.py" beforeDir="false" afterPath="$PROJECT_DIR$/fazconsulta.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/guardaconsulta.py" beforeDir="false" afterPath="$PROJECT_DIR$/guardaconsulta.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -108,7 +107,7 @@
       <updated>1730492063576</updated>
       <workItem from="1730492064604" duration="2627000" />
       <workItem from="1730502545468" duration="5654000" />
-      <workItem from="1730752850849" duration="10555000" />
+      <workItem from="1730752850849" duration="19936000" />
     </task>
     <task id="LOCAL-00001" summary="Primeiro import">
       <option name="closed" value="true" />
@@ -166,7 +165,15 @@
       <option name="project" value="LOCAL" />
       <updated>1730752522426</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Correção de codificação de arquivo Windows-1252">
+      <option name="closed" value="true" />
+      <created>1730836608731</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1730836608731</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -190,12 +197,13 @@
     <MESSAGE value="Guardando a consulta localmente" />
     <MESSAGE value="Atualizando métodos de busca" />
     <MESSAGE value="Gera e concatena arquivos" />
-    <option name="LAST_COMMIT_MESSAGE" value="Gera e concatena arquivos" />
+    <MESSAGE value="Correção de codificação de arquivo Windows-1252" />
+    <option name="LAST_COMMIT_MESSAGE" value="Correção de codificação de arquivo Windows-1252" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/integraPratic$dbconnection.coverage" NAME="dbconnection Coverage Results" MODIFIED="1730517270379" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/integraPratic$fazconsulta.coverage" NAME="fazconsulta Coverage Results" MODIFIED="1730517113265" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/integraPratic$main.coverage" NAME="main Coverage Results" MODIFIED="1730834622415" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/integraPratic$main.coverage" NAME="main Coverage Results" MODIFIED="1730836703052" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/integraPratic$postos.coverage" NAME="postos Coverage Results" MODIFIED="1730516380291" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

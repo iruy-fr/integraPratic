@@ -4,14 +4,18 @@ from dateutil.relativedelta import relativedelta, FR
 
 
 def get_pasta():
-    return os.path.basename(r"C:\consultatesteintegraPratic/35")
+    #ATIVAR ANTES DE ENVIAR PARA O PRATIC
+    #return os.path.basename(os.path.dirname(os.path.abspath(__name__)))
+    return os.path.basename(r"C:\consultatesteintegraPratic/41")
 
 def caminho_clientes():
+    #arquivo_local = rf"{os.path.dirname(os.path.realpath(__name__))}/{caminho_data()}.txt"
     arquivo_local = rf"C:\consultatesteintegraPratic/consultaclientesteste{caminho_data()}.txt"
     return arquivo_local
 
 
 def caminho_arquivo():
+    # arquivo_local = rf"{os.path.dirname(os.path.realpath(__name__))}/{caminho_data()}.txt"
     arquivo_local = rf"C:\consultatesteintegraPratic/consultateste{caminho_data()}.txt"
     return arquivo_local
 
@@ -20,28 +24,36 @@ def caminho_cad():
     pratic_cad = os.path.basename(rf"{get_pasta()}")
     match pratic_cad:
         case '35':
-            arquivo_local = rf"C:\consultatesteintegraPratic/{pratic_cad}/cad_35.txt"
+            #arquivo_local = rf"{os.path.dirname(os.path.realpath(__name__))}/{pratic_cad}/cad035.txt"
+            arquivo_local = rf"C:\consultatesteintegraPratic/{pratic_cad}/cad035.txt"
             return arquivo_local
         case '41':
-            arquivo_local = rf"C:\consultatesteintegraPratic/{pratic_cad}/cad_41.txt"
+            # arquivo_local = rf"{os.path.dirname(os.path.realpath(__name__))}/{pratic_cad}/cad041.txt"
+            arquivo_local = rf"C:\consultatesteintegraPratic/{pratic_cad}/cad041.txt"
             return arquivo_local
         case '48':
-            arquivo_local = rf"C:\consultatesteintegraPratic/{pratic_cad}/cad_48.txt"
+            # arquivo_local = rf"{os.path.dirname(os.path.realpath(__name__))}/{pratic_cad}/cad048.txt"
+            arquivo_local = rf"C:\consultatesteintegraPratic/{pratic_cad}/cad048.txt"
             return arquivo_local
         case '57':
-            arquivo_local = rf"C:\consultatesteintegraPratic/{pratic_cad}/cad_57.txt"
+            # arquivo_local = rf"{os.path.dirname(os.path.realpath(__name__))}/{pratic_cad}/cad057.txt"
+            arquivo_local = rf"C:\consultatesteintegraPratic/{pratic_cad}/cad057.txt"
             return arquivo_local
         case '71':
-            arquivo_local = rf"C:\consultatesteintegraPratic/{pratic_cad}/cad_71.txt"
+            # arquivo_local = rf"{os.path.dirname(os.path.realpath(__name__))}/{pratic_cad}/cad071.txt"
+            arquivo_local = rf"C:\consultatesteintegraPratic/{pratic_cad}/cad071.txt"
             return arquivo_local
         case '83':
-            arquivo_local = rf"C:\consultatesteintegraPratic/{pratic_cad}/cad_83.txt"
+            # arquivo_local = rf"{os.path.dirname(os.path.realpath(__name__))}/{pratic_cad}/cad083.txt"
+            arquivo_local = rf"C:\consultatesteintegraPratic/{pratic_cad}/cad083.txt"
             return arquivo_local
         case '101':
-            arquivo_local = rf"C:\consultatesteintegraPratic/{pratic_cad}/cad_101.txt"
+            # arquivo_local = rf"{os.path.dirname(os.path.realpath(__name__))}/{pratic_cad}/cad101.txt"
+            arquivo_local = rf"C:\consultatesteintegraPratic/{pratic_cad}/cad101.txt"
             return arquivo_local
         case '114':
-            arquivo_local = rf"C:\consultatesteintegraPratic/{pratic_cad}/cad_114.txt"
+            # arquivo_local = rf"{os.path.dirname(os.path.realpath(__name__))}/{pratic_cad}/cad114.txt"
+            arquivo_local = rf"C:\consultatesteintegraPratic/{pratic_cad}/cad114.txt"
             return arquivo_local
 
 
