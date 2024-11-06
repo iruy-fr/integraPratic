@@ -67,8 +67,7 @@ FROM
     INNER JOIN u_vincnegdep ON ( u_vincnegdep.departamento = u_departamento.u_departamento_id )
 WHERE
 itemgrupo.grupo not in (880, 881)
- AND   ( itemagroestab.estab IN ( 1002, 1061, 1078, 1086,
-                                 1100 ) )
+ AND   ( itemagroestab.estab IN ( 1002, 1061, 1078, 1086,1100 ) )
     AND ( to_date(to_char(itemagro.ultalt, 'DD/MM/YYYY'), 'DD/MM/YYYY') >= TO_DATE('{consulta_sexta()}', 'DD/MM/YYYY') )
     AND ( u_vincnegdep.negocio IN (1, 4, 5, 15)
           OR grupocontabil_u.grupocontabil = 38
