@@ -5,18 +5,18 @@ from dateutil.relativedelta import relativedelta, FR
 
 def get_pasta():
     #ATIVAR ANTES DE ENVIAR PARA O PRATIC
-    #return os.path.basename(os.path.dirname(os.path.abspath(__name__)))
-    return os.path.basename(r"C:\consultatesteintegraPratic/41")
+    return os.path.basename(os.path.dirname(os.path.abspath(__name__)))
+    #return os.path.basename(r"\\192.168.99.10/c$/35")
 
 def caminho_clientes():
-    #arquivo_local = rf"{os.path.dirname(os.path.realpath(__name__))}/{caminho_data()}.txt"
-    arquivo_local = rf"C:\consultatesteintegraPratic/consultaclientesteste{caminho_data()}.txt"
+    arquivo_local = rf"{os.path.dirname(os.path.realpath(__name__))}/clientes_{caminho_data()}.txt"
+    #arquivo_local = rf"C:\consultatesteintegraPratic/consultaclientesteste{caminho_data()}.txt"
     return arquivo_local
 
 
 def caminho_arquivo():
-    # arquivo_local = rf"{os.path.dirname(os.path.realpath(__name__))}/{caminho_data()}.txt"
-    arquivo_local = rf"C:\consultatesteintegraPratic/consultateste{caminho_data()}.txt"
+    arquivo_local = rf"{os.path.dirname(os.path.realpath(__name__))}/produtos_{caminho_data()}.txt"
+    #arquivo_local = rf"C:\consultatesteintegraPratic/consultateste{caminho_data()}.txt"
     return arquivo_local
 
 
@@ -24,8 +24,8 @@ def caminho_cad():
     pratic_cad = os.path.basename(rf"{get_pasta()}")
     match pratic_cad:
         case '35':
-            #arquivo_local = rf"{os.path.dirname(os.path.realpath(__name__))}/{pratic_cad}/cad035.txt"
-            arquivo_local = rf"C:\consultatesteintegraPratic/{pratic_cad}/cad035.txt"
+            arquivo_local = rf"{os.path.dirname(os.path.realpath(__name__))}/cad035.txt"
+            #arquivo_local = rf"C:\consultatesteintegraPratic/{pratic_cad}/cad035.txt"
             return arquivo_local
         case '41':
             # arquivo_local = rf"{os.path.dirname(os.path.realpath(__name__))}/{pratic_cad}/cad041.txt"
