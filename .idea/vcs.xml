@@ -4,7 +4,5 @@
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/output/main/_internal/integraPratic" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/output/main/_internal/integraPratic/output/main/_internal/integraPratic" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/output/main/_internal/integraPratic/output/main/_internal/integraPratic/output/main/_internal/integraPratic" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/output/main/_internal/integraPratic/output/main/_internal/integraPratic/output/main/_internal/integraPratic/output/main/_internal/integraPratic" vcs="Git" />
   </component>
 </project>
