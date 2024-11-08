@@ -69,7 +69,7 @@ WHERE
 itemgrupo.grupo not in (880, 881)
  AND   ( itemagroestab.estab IN ( 1002, 1061, 1078, 1086,1100 ) )
     AND ( to_date(to_char(itemagro.ultalt, 'DD/MM/YYYY'), 'DD/MM/YYYY') >= TO_DATE('{consulta_sexta()}', 'DD/MM/YYYY') )
-    AND ( u_vincnegdep.negocio IN (1, 4, 5, 15)
+    AND ( u_vincnegdep.negocio IN (1, 2, 4, 5, 15)
           OR grupocontabil_u.grupocontabil = 38
           OR itemagro.grupo IN (   5,  23,  71,  151 , 365, 958,
                                  954,  445,  182,  1019, 1815, 1576,
