@@ -5,15 +5,29 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="667f5249-c10d-40d5-b13f-f34c2ec310c6" name="Changes" comment="Ajuste na consulta e conexão ao banco">
-      <change afterPath="$PROJECT_DIR$/automate.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dbconnection.py" beforeDir="false" afterPath="$PROJECT_DIR$/dbconnection.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fazconsulta.py" beforeDir="false" afterPath="$PROJECT_DIR$/fazconsulta.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/output/main/_internal/integraPratic/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/output/main/_internal/integraPratic/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/output/main/_internal/integraPratic/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/output/main/_internal/integraPratic/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/output/main/_internal/integraPratic/dbconnection.py" beforeDir="false" afterPath="$PROJECT_DIR$/output/main/_internal/integraPratic/dbconnection.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/main/_internal/integraPratic/fazconsulta.py" beforeDir="false" afterPath="$PROJECT_DIR$/output/main/_internal/integraPratic/fazconsulta.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/output/main/_internal/integraPratic/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/output/main/_internal/integraPratic/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/main/_internal/integraPratic/output/main/_internal/integraPratic/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/output/main/_internal/integraPratic/output/main/_internal/integraPratic/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/main/_internal/integraPratic/output/main/_internal/integraPratic/dbconnection.py" beforeDir="false" afterPath="$PROJECT_DIR$/output/main/_internal/integraPratic/output/main/_internal/integraPratic/dbconnection.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/main/_internal/integraPratic/output/main/_internal/integraPratic/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/output/main/_internal/integraPratic/output/main/_internal/integraPratic/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/main/_internal/integraPratic/output/main/_internal/integraPratic/output/main/_internal/integraPratic/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/output/main/_internal/integraPratic/output/main/_internal/integraPratic/output/main/_internal/integraPratic/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/main/_internal/integraPratic/output/main/_internal/integraPratic/output/main/_internal/integraPratic/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/output/main/_internal/integraPratic/output/main/_internal/integraPratic/output/main/_internal/integraPratic/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/main/_internal/integraPratic/output/main/_internal/integraPratic/output/main/_internal/integraPratic/dbconnection.py" beforeDir="false" afterPath="$PROJECT_DIR$/output/main/_internal/integraPratic/output/main/_internal/integraPratic/output/main/_internal/integraPratic/dbconnection.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/main/_internal/integraPratic/output/main/_internal/integraPratic/output/main/_internal/integraPratic/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/output/main/_internal/integraPratic/output/main/_internal/integraPratic/output/main/_internal/integraPratic/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/main/_internal/integraPratic/output/main/_internal/integraPratic/output/main/_internal/integraPratic/output/main/_internal/integraPratic/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/shelved.patch" beforeDir="false" afterPath="$PROJECT_DIR$/output/main/_internal/integraPratic/output/main/_internal/integraPratic/output/main/_internal/integraPratic/output/main/_internal/integraPratic/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/shelved.patch" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/main/_internal/integraPratic/output/main/_internal/integraPratic/output/main/_internal/integraPratic/output/main/_internal/integraPratic/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]1/shelved.patch" beforeDir="false" afterPath="$PROJECT_DIR$/output/main/_internal/integraPratic/output/main/_internal/integraPratic/output/main/_internal/integraPratic/output/main/_internal/integraPratic/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]1/shelved.patch" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/main/_internal/integraPratic/output/main/_internal/integraPratic/output/main/_internal/integraPratic/output/main/_internal/integraPratic/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/output/main/_internal/integraPratic/output/main/_internal/integraPratic/output/main/_internal/integraPratic/output/main/_internal/integraPratic/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/main/_internal/integraPratic/output/main/_internal/integraPratic/output/main/_internal/integraPratic/output/main/_internal/integraPratic/dbconnection.py" beforeDir="false" afterPath="$PROJECT_DIR$/output/main/_internal/integraPratic/output/main/_internal/integraPratic/output/main/_internal/integraPratic/output/main/_internal/integraPratic/dbconnection.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/main/_internal/integraPratic/output/main/_internal/integraPratic/output/main/_internal/integraPratic/output/main/_internal/integraPratic/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/output/main/_internal/integraPratic/output/main/_internal/integraPratic/output/main/_internal/integraPratic/output/main/_internal/integraPratic/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/supermercados.py" beforeDir="false" afterPath="$PROJECT_DIR$/supermercados.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -114,7 +128,7 @@
       <workItem from="1730492064604" duration="2627000" />
       <workItem from="1730502545468" duration="5654000" />
       <workItem from="1730752850849" duration="38798000" />
-      <workItem from="1731003728029" duration="25789000" />
+      <workItem from="1731003728029" duration="14732000" />
     </task>
     <task id="LOCAL-00001" summary="Primeiro import">
       <option name="closed" value="true" />
@@ -240,7 +254,7 @@
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/integraPratic$dbconnection.coverage" NAME="dbconnection Coverage Results" MODIFIED="1730517270379" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/integraPratic$fazconsulta.coverage" NAME="fazconsulta Coverage Results" MODIFIED="1730517113265" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/integraPratic$main.coverage" NAME="main Coverage Results" MODIFIED="1731097186871" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/integraPratic$main.coverage" NAME="main Coverage Results" MODIFIED="1731009127818" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/integraPratic$postos.coverage" NAME="postos Coverage Results" MODIFIED="1730516380291" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
