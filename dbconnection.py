@@ -1,5 +1,5 @@
 import oracledb as db
-import os
+import os, sys
 
 
 def readpath():
@@ -9,7 +9,13 @@ def readpath():
 
 
 def via_db():
-    db.init_oracle_client(lib_dir=f"{os.path.dirname(os.path.realpath(__name__))}/_internal/integraPratic/instantclient_23_6")
+    if getattr(sys, 'frozen', False):  # Executável gerado (modo onefile)
+        base_path = sys._MEIPASS
+    else:
+        base_path = os.path.dirname(os.path.abspath(__file__))
+
+    instantclient_path = os.path.join(base_path, "instantclient_23_6")
+    db.init_oracle_client(lib_dir=instantclient_path)
     connection = db.connect(
         user='VIASOFT',
         password=readpath(),
