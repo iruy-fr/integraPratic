@@ -1,0 +1,85 @@
+{
+ "version": "auto-py-to-exe-configuration_v1",
+ "pyinstallerOptions": [
+  {
+   "optionDest": "noconfirm",
+   "value": true
+  },
+  {
+   "optionDest": "filenames",
+   "value": "C:/Users/Cotriba/PycharmProjects/integraPratic/main.py"
+  },
+  {
+   "optionDest": "onefile",
+   "value": true
+  },
+  {
+   "optionDest": "console",
+   "value": false
+  },
+  {
+   "optionDest": "clean_build",
+   "value": false
+  },
+  {
+   "optionDest": "strip",
+   "value": false
+  },
+  {
+   "optionDest": "noupx",
+   "value": false
+  },
+  {
+   "optionDest": "disable_windowed_traceback",
+   "value": false
+  },
+  {
+   "optionDest": "uac_admin",
+   "value": false
+  },
+  {
+   "optionDest": "uac_uiaccess",
+   "value": false
+  },
+  {
+   "optionDest": "argv_emulation",
+   "value": false
+  },
+  {
+   "optionDest": "bootloader_ignore_signals",
+   "value": false
+  },
+  {
+   "optionDest": "hiddenimports",
+   "value": "asyncio"
+  },
+  {
+   "optionDest": "hiddenimports",
+   "value": "uuid"
+  },
+  {
+   "optionDest": "hiddenimports",
+   "value": "cryptography"
+  },
+  {
+   "optionDest": "hiddenimports",
+   "value": "oracledb"
+  },
+  {
+   "optionDest": "hiddenimports",
+   "value": "psutil"
+  },
+  {
+   "optionDest": "datas",
+   "value": "C:/Users/Cotriba/PycharmProjects/integraPratic;integraPratic/"
+  },
+  {
+   "optionDest": "datas",
+   "value": "C:/Users/Cotriba/PycharmProjects/integraPratic/instantclient_23_6;instantclient_23_6/"
+  }
+ ],
+ "nonPyinstallerOptions": {
+  "increaseRecursionLimit": true,
+  "manualArguments": ""
+ }
+}
