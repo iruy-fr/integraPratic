@@ -9,7 +9,7 @@ def readpath():
 
 
 def via_db():
-    if getattr(sys, 'frozen', False):  # Executável gerado (modo onefile)
+    if getattr(sys, 'frozen', False):
         base_path = sys._MEIPASS
     else:
         base_path = os.path.dirname(os.path.abspath(__file__))

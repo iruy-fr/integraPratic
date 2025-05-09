@@ -1,11 +1,11 @@
-import logging
-import re
+import re, logging, os
 import clientes,postos,supermercados,farmacia
 from dbconnection import via_db
 from fazconsulta import caminho_arquivo,caminho_clientes, cabecalho_cad, caminho_cad
 
+
 def guardapostos():
-    logging.basicConfig(filename='consulta.log', filemode='w', level=logging.DEBUG, )
+    logging.basicConfig(filename='consulta.log', filemode='w', level=logging.DEBUG)
     try:
         execute = via_db().cursor().execute(postos.query)
         resultados = execute.fetchall()
@@ -47,7 +47,7 @@ def guardasupermercados():
         via_db().cursor().close()
 
 def guardafarmacia():
-    logging.basicConfig(filename='consulta.log', filemode='w', level=logging.DEBUG, )
+    logging.basicConfig(filename='consulta.log', filemode='w', level=logging.DEBUG)
     try:
         execute = via_db().cursor().execute(farmacia.query)
         resultados = execute.fetchall()
@@ -90,7 +90,18 @@ def guardaclientes():
 
 
 def formatador_cad():
-    with open(caminho_cad(),'w', encoding='cp1252') as arquivo:
-        for resultado in [f'{caminho_arquivo()}',f'{caminho_clientes()}']:
-            with open(resultado, 'r', encoding='cp1252') as r:
-                arquivo.writelines(r)
+    logging.basicConfig(
+        filename=os.path.join(os.path.dirname(os.path.realpath(__file__)), 'format.log'),
+        filemode='a',
+        level=logging.DEBUG,
+        format='%(asctime)s - %(levelname)s - %(message)s'
+    )
+    try:
+        with open(caminho_cad(),'w', encoding='cp1252') as arquivo:
+            for resultado in [f'{caminho_arquivo()}',f'{caminho_clientes()}']:
+                with open(resultado, 'r', encoding='cp1252') as r:
+                    arquivo.writelines(r)
+                    logging.info(f"Arquivo concatenado gerado com sucesso em {caminho_cad()} com o arquivo {caminho_arquivo()} e clientes {caminho_clientes()}")
+    except Exception as e:
+        logging.error(f"Erro ao executar a concatenação", exc_info=True)
+        print(f"Ocorreu um erro inesperado: {str(e)}")

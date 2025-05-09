@@ -9,8 +9,13 @@ if get_pasta() in ('35','41','48','71','114'):
 
 elif get_pasta() in ('83','101'):
     guardapostos()
+    print("Postos OK")
     guardaclientes()
+    print("Cli OK")
     formatador_cad()
+    print("Format OK")
+
+
 
 elif get_pasta() in ('57'):
     guardafarmacia()
