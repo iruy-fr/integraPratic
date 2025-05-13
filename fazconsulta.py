@@ -47,4 +47,3 @@ def caminho_data():
     return formated_date
 
 
-caminho_cad()
