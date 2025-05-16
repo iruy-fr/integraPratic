@@ -5,7 +5,7 @@ from fazconsulta import caminho_arquivo,caminho_clientes, cabecalho_cad, caminho
 
 
 def guardapostos():
-    logging.basicConfig(filename='consulta.log', filemode='w', level=logging.DEBUG)
+    logging.basicConfig(filename=r'C:\Trab99\consulta.log', filemode='w', level=logging.DEBUG)
     try:
         execute = via_db().cursor().execute(postos.query)
         resultados = execute.fetchall()
@@ -26,7 +26,7 @@ def guardapostos():
         via_db().cursor().close()
 
 def guardasupermercados():
-    logging.basicConfig(filename='consulta.log', filemode='w', level=logging.DEBUG)
+    logging.basicConfig(filename=r'C:\Trab99\consulta.log', filemode='w', level=logging.DEBUG)
     try:
         execute = via_db().cursor().execute(supermercados.query)
         resultados = execute.fetchall()
@@ -47,7 +47,7 @@ def guardasupermercados():
         via_db().cursor().close()
 
 def guardarestaurante():
-    logging.basicConfig(filename='consulta.log', filemode='w', level=logging.DEBUG)
+    logging.basicConfig(filename=r'C:\Trab99\consulta.log', filemode='w', level=logging.DEBUG)
     try:
         execute = via_db().cursor().execute(supermercados.query)
         resultados = execute.fetchall()
@@ -68,7 +68,7 @@ def guardarestaurante():
         via_db().cursor().close()
 
 def guardafarmacia():
-    logging.basicConfig(filename='consulta.log', filemode='w', level=logging.DEBUG)
+    logging.basicConfig(filename=r'C:\Trab99\consulta.log', filemode='w', level=logging.DEBUG)
     try:
         execute = via_db().cursor().execute(farmacia.query)
         resultados = execute.fetchall()

@@ -13,7 +13,7 @@ def iecoper_import():
     dlg.set_focus()
     dlg.wait('ready', timeout=15)
 
-    dlg.child_window(title="Aplicativo", control_type="MenuBar").child_window(title="Importar",control_type="MenuItem").click_input()
+    dlg.child_window(title="Aplicativo", control_type="MenuBar").child_window(title="Importar",control_type="MenuItem").invoke()
     print("MenuItem 'Importar' clicado")
 
     time.sleep(1)
@@ -22,7 +22,7 @@ def iecoper_import():
         # Conecta à janela "Pergunta do sistema"
         pergunta = Desktop(backend="uia").window(title="Pergunta do sistema")
         pergunta.wait('visible', timeout=5)
-        pergunta.child_window(title="Sim", control_type="Button").click_input()
+        pergunta.child_window(title="Sim", control_type="Button").invoke()
         print("Botão 'Sim' clicado")
     except Exception as e:
         print("Erro ao clicar em 'Sim':", e)
@@ -33,7 +33,7 @@ def iecoper_import():
     for w in Desktop(backend="uia").windows():
         try:
             if w.child_window(title="Confirmar", control_type="Button").exists(timeout=1):
-                w.child_window(title="Confirmar", control_type="Button").click_input()
+                w.child_window(title="Confirmar", control_type="Button").invoke()
                 print("Botão 'Confirmar' clicado")
                 break
         except:
@@ -44,7 +44,7 @@ def iecoper_import():
 
     try:
         imp_win = Desktop(backend="uia").window(title="Confirmação importação estabelecimento")
-        imp_win.child_window(title="Confirmar", control_type="Button").click_input()
+        imp_win.child_window(title="Confirmar", control_type="Button").invoke()
         print("Botão 'Confirmar' clicado.")
 
     except Exception as e:
@@ -57,11 +57,11 @@ def iecoper_import():
     abrir_janela.child_window(auto_id="1148", control_type="Edit").set_edit_text(f"cad{get_pasta().zfill(3)}.txt")
 
     # Clicar no botão "Abrir"
-    abrir_janela.child_window(title="Abrir", auto_id="1", control_type="Button").click_input()
+    abrir_janela.child_window(title="Abrir", auto_id="1", control_type="Button").invoke()
 
     try:
         imp_win = Desktop(backend="uia").window(title="Confirm")
-        imp_win.child_window(title="Yes", control_type="Button").click_input()
+        imp_win.child_window(title="Yes", control_type="Button").invoke()
         print("Botão 'Yes' clicado.")
 
     except Exception as e:

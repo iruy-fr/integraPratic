@@ -7,26 +7,26 @@ if get_pasta() in ('35','41','48','114'):
     guardasupermercados()
     guardaclientes()
     formatador_cad()
-    iecoper_import()
+
 
 elif get_pasta() in ('83','101'):
     guardapostos()
     guardaclientes()
     formatador_cad()
-    iecoper_import()
+
 
 
 elif get_pasta() in ('57'):
     guardafarmacia()
     guardaclientes()
     formatador_cad()
-    iecoper_import()
+
 
 elif get_pasta() in ('71'):
     guardarestaurante()
     guardaclientes()
     formatador_cad()
-    iecoper_import()
+
 
 else:
     guardaclientes()
