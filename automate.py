@@ -1,7 +1,7 @@
 from pywinauto.application import Application
 from pywinauto import Desktop
 import time
-from fazconsulta import caminho_cad
+from fazconsulta import get_pasta
 
 
 def iecoper_import():
@@ -51,12 +51,18 @@ def iecoper_import():
         print("Erro durante preenchimento e confirmação:", e)
 
     time.sleep(5)
+    abrir_janela = Desktop(backend="uia").window(title="Abrir")
 
-    Application(backend="uia").connect(title="Abrir")
-    abrir_janela = app.window(title="Abrir")
+    # Inserir o caminho do arquivo no campo de nome
+    abrir_janela.child_window(auto_id="1148", control_type="Edit").set_edit_text(f"cad{get_pasta().zfill(3)}.txt")
 
-    # Insere o caminho do arquivo no campo "Nome:"
-    abrir_janela.child_window(control_type="ComboBox").set_edit_text(caminho_cad())
-    print(caminho_cad())
-    # Clica no botão "Abrir"
-    abrir_janela.child_window(title="Abrir", control_type="Button").click()
+    # Clicar no botão "Abrir"
+    abrir_janela.child_window(title="Abrir", auto_id="1", control_type="Button").click_input()
+
+    try:
+        imp_win = Desktop(backend="uia").window(title="Confirm")
+        imp_win.child_window(title="Yes", control_type="Button").click_input()
+        print("Botão 'Yes' clicado.")
+
+    except Exception as e:
+        print("Erro durante aceite:", e)

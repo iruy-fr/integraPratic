@@ -1,5 +1,5 @@
 import re, logging, os
-import clientes,postos,supermercados,farmacia
+import clientes,postos,supermercados,farmacia, restaurante
 from dbconnection import via_db
 from fazconsulta import caminho_arquivo,caminho_clientes, cabecalho_cad, caminho_cad
 
@@ -41,6 +41,27 @@ def guardasupermercados():
 
     except Exception as e:
         logging.error(f"Erro ao executar a consulta: {supermercados.query}", exc_info=True)
+        print(f"Ocorreu um erro inesperado: {str(e)}")
+
+    finally:
+        via_db().cursor().close()
+
+def guardarestaurante():
+    logging.basicConfig(filename='consulta.log', filemode='w', level=logging.DEBUG)
+    try:
+        execute = via_db().cursor().execute(supermercados.query)
+        resultados = execute.fetchall()
+        if resultados:
+            with open(caminho_arquivo(),'w', encoding='cp1252') as arquivo:
+               cabecalho = [f'{cabecalho_cad()}']
+               arquivo.write('\t'.join(cabecalho)+'\n')
+
+               for row in resultados:
+                   linha_formatada = '\t'.join(map(str, row))+'\n'
+                   arquivo.write(linha_formatada)
+
+    except Exception as e:
+        logging.error(f"Erro ao executar a consulta: {restaurante.query}", exc_info=True)
         print(f"Ocorreu um erro inesperado: {str(e)}")
 
     finally:

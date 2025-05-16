@@ -4,11 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="667f5249-c10d-40d5-b13f-f34c2ec310c6" name="Changes" comment="json para executável">
+    <list default="true" id="667f5249-c10d-40d5-b13f-f34c2ec310c6" name="Changes" comment="Automatizando importação">
+      <change afterPath="$PROJECT_DIR$/restaurante.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/automate.py" beforeDir="false" afterPath="$PROJECT_DIR$/automate.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fazconsulta.py" beforeDir="false" afterPath="$PROJECT_DIR$/fazconsulta.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/farmacia.py" beforeDir="false" afterPath="$PROJECT_DIR$/farmacia.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/guardaconsulta.py" beforeDir="false" afterPath="$PROJECT_DIR$/guardaconsulta.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/postos.py" beforeDir="false" afterPath="$PROJECT_DIR$/postos.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/supermercados.py" beforeDir="false" afterPath="$PROJECT_DIR$/supermercados.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,7 +63,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable",
+    "settings.editor.selected.configurable": "advanced.settings",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -121,7 +126,8 @@
       <workItem from="1737462976604" duration="194000" />
       <workItem from="1738585542148" duration="859000" />
       <workItem from="1745870725028" duration="4997000" />
-      <workItem from="1746704620940" duration="49857000" />
+      <workItem from="1746704620940" duration="50794000" />
+      <workItem from="1747308347313" duration="14867000" />
     </task>
     <task id="LOCAL-00001" summary="Primeiro import">
       <option name="closed" value="true" />
@@ -227,7 +233,15 @@
       <option name="project" value="LOCAL" />
       <updated>1746796792403</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Automatizando importação">
+      <option name="closed" value="true" />
+      <created>1747135207049</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1747135207049</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -258,7 +272,8 @@
     <MESSAGE value="Criando automação" />
     <MESSAGE value="Alterando pyinstaller para --onefile" />
     <MESSAGE value="json para executável" />
-    <option name="LAST_COMMIT_MESSAGE" value="json para executável" />
+    <MESSAGE value="Automatizando importação" />
+    <option name="LAST_COMMIT_MESSAGE" value="Automatizando importação" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -273,7 +288,7 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/integraPratic$dbconnection.coverage" NAME="dbconnection Coverage Results" MODIFIED="1730517270379" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/integraPratic$fazconsulta.coverage" NAME="fazconsulta Coverage Results" MODIFIED="1747053251577" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/integraPratic$fazconsulta.coverage" NAME="fazconsulta Coverage Results" MODIFIED="1747338632328" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/integraPratic$main.coverage" NAME="main Coverage Results" MODIFIED="1731097186871" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/integraPratic$postos.coverage" NAME="postos Coverage Results" MODIFIED="1730516380291" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/integraPratic$guardaconsulta.coverage" NAME="guardaconsulta Coverage Results" MODIFIED="1746790703015" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />

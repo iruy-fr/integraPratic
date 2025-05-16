@@ -66,7 +66,7 @@ FROM
     INNER JOIN u_tribmerc ON ( u_tribmerc.u_tribmerc_id = itemagro_u.u_tribmerc_id )
     INNER JOIN u_vincnegdep ON ( u_vincnegdep.departamento = u_departamento.u_departamento_id )
 WHERE
-itemgrupo.grupo not in (880, 881)
+itemgrupo.grupo not in (880, 881, 5500, 5520)
  AND   ( itemagroestab.estab IN ( 1002, 1061, 1078, 1086,
                                  1100,1102 ) )
     AND ( to_date(to_char(itemagro.ultalt, 'DD/MM/YYYY'), 'DD/MM/YYYY') >= TO_DATE('{consulta_sexta()}', 'DD/MM/YYYY') )
@@ -80,7 +80,7 @@ itemgrupo.grupo not in (880, 881)
                                  4005, 4006, 4007, 4008, 4009,
                                  4010, 4011, 4012, 4013, 4014,
                                  4016, 4017, 4018, 4021, 4023,
-                                 4025, 4027, 4029 ) )
+                                 4025, 4027, 4029) )
 
            /* acima grupos da Farmácia
 

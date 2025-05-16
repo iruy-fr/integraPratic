@@ -1,6 +1,5 @@
 from fazconsulta import consulta_sexta
 
-
 query = f"""
 SELECT DISTINCT
     lpad('01', 2)
@@ -66,20 +65,20 @@ FROM
     INNER JOIN u_tribmerc ON ( u_tribmerc.u_tribmerc_id = itemagro_u.u_tribmerc_id )
     INNER JOIN u_vincnegdep ON ( u_vincnegdep.departamento = u_departamento.u_departamento_id )
 WHERE
-itemgrupo.grupo not in (880, 881, 5500, 5520)
- AND   ( itemagroestab.estab IN ( 1064,1083) )
+itemgrupo.grupo not in (880, 881)
+ AND   ( itemagroestab.estab IN ( 1002, 1061, 1078, 1086,1100 ) )
     AND ( to_date(to_char(itemagro.ultalt, 'DD/MM/YYYY'), 'DD/MM/YYYY') >= TO_DATE('{consulta_sexta()}', 'DD/MM/YYYY') )
-    AND ( (u_vincnegdep.negocio IN ( 4,5))
+    AND ( u_vincnegdep.negocio IN (1, 2, 4, 5, 15)
           OR grupocontabil_u.grupocontabil = 38
           OR itemagro.grupo IN (   5,  23,  71,  151 , 365, 958,
                                  954,  445,  182,  1019, 1815, 1576,
-                                 1708, 1897, 1966, 1664, 2000, 2158, 
+                                 1708, 1897, 1966, 1664, 2158, 1602, 
                                  1664, 1801, 1802, 1865, 1501, 1550, 
-                                 1602, 2010, 4000, 4001, 4002, 4003, 
-                                 4004, 4005, 4006, 4007, 4008, 4009,
+                                 2010, 4000, 4001, 4002, 4003, 4004,
+                                 4005, 4006, 4007, 4008, 4009,
                                  4010, 4011, 4012, 4013, 4014,
                                  4016, 4017, 4018, 4021, 4023,
-                                 4025, 4027, 4029 ) )
+                                 4025, 4027, 4029, 5500, 5520 ) )
 
            /* acima grupos da Farmácia
 
@@ -264,7 +263,7 @@ FROM
 WHERE
         contamov.ultalt >= TO_DATE('{consulta_sexta()}', 'DD/MM/YYYY')
     AND contamov.matfuncionario IS NOT NULL
-    
+
 UNION ALL
 
 
@@ -316,4 +315,4 @@ FROM
          u_depara_cidade depara
     JOIN cidade ON ( cidade.ibge = coalesce(depara.ibge, '10009') )
                    AND ( cidade.uf = coalesce(depara.dsuf, 'RS') )
-                   """
+"""
